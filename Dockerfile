@@ -46,5 +46,3 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /opt/src/pgloader/build/bin/pgloader /usr/local/bin
-
-LABEL maintainer="Dimitri Fontaine <dim@tapoueh.org>"
