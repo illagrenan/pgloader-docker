@@ -1,7 +1,7 @@
 # Build this image: docker build -f .\Dockerfile -t illagrenan/pgloader .
 
 FROM debian:stable-slim as builder
-ARG PGLOADER_VERSION=v3.6.1
+ARG PGLOADER_VERSION=v3.6.2
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
